@@ -125,7 +125,7 @@ export default {
 
 <template>
   <ToolbarComp>
-    <v-container fluid>
+    <v-container fluid data-aos="fade-up">
       <v-row class="about-us">
         <v-col cols="12" md="6">
           <v-img
@@ -152,7 +152,7 @@ export default {
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid>
+    <v-container fluid data-aos="fade-up">
       <v-row class="mt-5 about-us">
         <v-col class="align-self-center my-education">
           <v-row class="subtitle-row" >
@@ -229,7 +229,7 @@ export default {
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid>
+    <v-container fluid data-aos="fade-up">
       <v-row class="mt-5 about-us">
         <v-col cols="12" md="6" class="align-self-center my-education">
           <v-row class="subtitle-row" >
@@ -271,7 +271,7 @@ export default {
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid style="background-color: #EEEEEE">
+    <v-container data-aos="fade-up" fluid style="background-color: #EEEEEE">
         <v-row class="service" 
         >
           <v-col cols="12">
@@ -307,7 +307,7 @@ export default {
           </v-col>
         </v-row>
       </v-container>
-      <v-container fluid >
+      <v-container fluid data-aos="fade-up">
         <v-row class="projects">
           <v-col>
             <v-row>

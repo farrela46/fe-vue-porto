@@ -35,7 +35,8 @@
         <v-list dense>
           <v-list-item v-for="item in menuItems" :key="item.title" @click="drawer = false" color="primary">
             <v-list-item-content>
-              <v-list-item-title @click="navigateTo(item.link)" class="menu-link-mobile">{{ item.title }}</v-list-item-title>
+              <v-list-item-title  @click="navigateTo(item.link)" 
+              class="menu-link-mobile">{{ item.title }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -65,6 +66,9 @@ export default {
     },
   },
   methods: {
+    navigateTo(link) {
+      this.$router.push(link);
+    },
     handleScroll() {
       this.isScrolled = window.scrollY > 0;
     },

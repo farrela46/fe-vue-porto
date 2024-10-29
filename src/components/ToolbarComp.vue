@@ -13,7 +13,7 @@
             <a
                 v-for="item in menuItems"
                 :key="item.title"
-                :href="item.link"
+                @click="navigateTo(item.link)"
                 class="menu-link mx-7"
                 :class="{ 'active-link': isActive(item.link), 'inactive-link': isInactive(item.link) }"
                 style="cursor: pointer; font-size: 15px;"

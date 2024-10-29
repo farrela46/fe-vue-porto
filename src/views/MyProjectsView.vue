@@ -64,9 +64,9 @@ export default {
           {
             id: 2,
             img: 'https://i.insider.com/610c373d2a24d0001861ede4?width=1136&format=jpeg',
-            title: 'Nigga Coffee',
+            title: 'Black Coffee',
             rating: '4.5',
-            desc: 'Nigga Coffee offering bold, high-quality brews with a lighthearted twist. Perfect for those who enjoy their coffee with a side of laughter!',
+            desc: 'Black Coffee offering bold, high-quality brews with a lighthearted twist. Perfect for those who enjoy their coffee with a side of laughter!',
             category: [
               { 
                 id: 1,
@@ -98,9 +98,9 @@ export default {
           {
             id: 4,
             img: 'https://www.healthyfood.com/wp-content/uploads/2016/11/Dark-hot-chocolate-1.jpg',
-            title: 'Nigga Chocolate',
+            title: 'Black Chocolate',
             rating: '3.5',
-            desc: 'Nigga Chocolate is a playful take on dark chocolate, blending rich, bold flavors with a touch of humor. Perfect for those who enjoy deep, intense chocolate with a fun, lighthearted twist!',
+            desc: 'Black Chocolate is a playful take on dark chocolate, blending rich, bold flavors with a touch of humor. Perfect for those who enjoy deep, intense chocolate with a fun, lighthearted twist!',
             category: [
               { 
                 id: 1,

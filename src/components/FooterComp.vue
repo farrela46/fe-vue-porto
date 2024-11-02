@@ -34,7 +34,7 @@
       </v-card-text>
       <v-divider></v-divider>
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>E-Cafe</strong>
+        {{ new Date().getFullYear() }} — <strong>Farrel Ahmad</strong>
       </v-card-text>
       </v-col>
     </v-row>

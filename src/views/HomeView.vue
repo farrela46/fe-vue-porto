@@ -14,6 +14,7 @@ export default {
   },
   data () {
       return {
+        Saya,
         isMobile: false,
         colors: [
           'indigo',
@@ -155,7 +156,7 @@ export default {
                     >
                       <v-img
                         alt="Ava"
-                        src="https://i.postimg.cc/94TPRcBP/rescale.png"
+                        :src="Saya"
                       ></v-img>
             </v-avatar>
           </v-row>

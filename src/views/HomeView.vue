@@ -4,6 +4,7 @@ import FooterComp from '@/components/FooterComp.vue'
 import AAU from '@/assets/AAUicon.png';
 import Oscar from '@/assets/OscarBookstore.png';
 import Yadi from '@/assets/YaDipinjam.png';
+import Saya from '@/assets/rescale.png';
 
 export default {
   name: 'Home',
@@ -154,7 +155,7 @@ export default {
                     >
                       <v-img
                         alt="Ava"
-                        src="https://i.postimg.cc/pdcsSThS/rescale.png"
+                        src="https://i.postimg.cc/94TPRcBP/rescale.png"
                       ></v-img>
             </v-avatar>
           </v-row>

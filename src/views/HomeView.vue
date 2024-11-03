@@ -1,6 +1,9 @@
 <script>
 import ToolbarComp from '@/components/ToolbarComp.vue'
 import FooterComp from '@/components/FooterComp.vue'
+import AAU from '@/assets/AAUicon.png';
+import Oscar from '@/assets/OscarBookstore.png';
+import Yadi from '@/assets/YaDipinjam.png';
 
 export default {
   name: 'Home',
@@ -38,10 +41,10 @@ export default {
         coffees: [
           {
             id: 1,
-            img: 'https://www.seriouseats.com/thmb/x5dQAByuE9saNvybQ4sjTU1dHG8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230621-SEA-DalognaCoffee-LorenaMasso-hero-e6a0eb179a2d457fb40c059d91594c35.jpg',
-            title: 'Dalgona Coffee',
+            img: Oscar,
+            title: 'Toko Buku Oscar',
             rating: '4',
-            desc: 'Dalgona Coffee is a beverage originating from Macau made by whipping equal parts instant coffee powder, sugar, and hot water until it becomes creamy and then adding it to cold or hot milk.',
+            desc: 'Aplikasi penjualan dan pembelian buku yang mendukung transaksi secara online maupun onsite, memudahkan pelanggan dalam mencari dan mendapatkan buku.',
             category: [
               { 
                 id: 1,
@@ -55,10 +58,10 @@ export default {
           },  
           {
             id: 2,
-            img: 'https://i.insider.com/610c373d2a24d0001861ede4?width=1136&format=jpeg',
-            title: 'Black Coffee',
+            img: Yadi,
+            title: 'YaDipinjam',
             rating: '4.5',
-            desc: 'Black Coffee offering bold, high-quality brews with a lighthearted twist. Perfect for those who enjoy their coffee with a side of laughter!',
+            desc: 'Website perpustakaan kolektif yang memungkinkan pengguna meminjam dan meminjamkan buku secara langsung antar pengguna.',
             category: [
               { 
                 id: 1,
@@ -72,10 +75,10 @@ export default {
           },
           {
             id: 3,
-            img: 'https://cdn.loveandlemons.com/wp-content/uploads/2023/06/iced-matcha-latte.jpg',
-            title: 'Matcha Latte',
+            img: AAU,
+            title: 'CDC AAU',
             rating: '4.5',
-            desc: 'MatchaLatte is a fun parody of classic matcha drinks, blending earthy flavors with humor. Enjoy a delicious, high-quality latte experience with a playful twist for matcha lovers!',
+            desc: 'Aplikasi untuk membantu pengguna mengembangkan karakter pribadi dengan fitur evaluasi, penilaian untuk Taruna Akademi Angkatan Udara Indonesia.',
             category: [
               { 
                 id: 1,
@@ -89,10 +92,10 @@ export default {
           },
           {
             id: 4,
-            img: 'https://www.healthyfood.com/wp-content/uploads/2016/11/Dark-hot-chocolate-1.jpg',
-            title: 'Black Chocolate',
+            img: AAU,
+            title: 'Administrasi AAU',
             rating: '3.5',
-            desc: 'Black Chocolate is a playful take on dark chocolate, blending rich, bold flavors with a touch of humor. Perfect for those who enjoy deep, intense chocolate with a fun, lighthearted twist!',
+            desc: 'Sistem untuk membantu pengguna dalam administrasi untuk Akademi Angkatan Udara Indonesia.',
             category: [
               { 
                 id: 1,
@@ -297,29 +300,16 @@ export default {
                   <v-img
                     class="align-end text-white"
                     :src="item.img"
-                    aspect-ratio="1/1"
+                    aspect-ratio="4/3"
                     max-height="300"
                     cover
                   >
                   </v-img>
-                  <v-card-title class="px-2">
-                    <v-rating
-                      hover
-                      :length="5"
-                      :size="32"
-                      :model-value="item.rating"
-                      active-color="primary"
-                      half-increments
-                      readonly
-                    />
-
-                    <p style="font-weight: 700; color: #FFF;">Rp. 20.000</p>
+                  <v-card-title class="px-3 pt-2">
+                    <p style="font-weight: 700; color: #FFF;">{{ item.title }}</p>
                   </v-card-title>
-                  <v-card-text>
-                    <a class="text-h5 text-light font-weight-black p-2"> {{ item.title }}</a>
-                  </v-card-text>
-                  <v-card-text class="px-2 mb-2">
-                    <p >{{ item.desc }}</p>
+                  <v-card-text class="px-3 mb-2">
+                    <p style="font-weight: 300; color: #FFF;">{{ item.desc }}</p>
                   </v-card-text>
                 </v-card>
               </v-col>

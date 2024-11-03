@@ -287,14 +287,14 @@ export default {
                 <a @click="PushToOurMenus" style="font-size: 15px; font-weight: 200; color:white; cursor: pointer"> See More <v-icon icon="mdi-arrow-right-thin" size="small"></v-icon> </a>
               </v-col>
             </v-row>
-            <v-row class="pt-7">
+            <v-row class="pt-7 pb-5">
               <v-col cols="12" sm="3" v-for="(item, index) in coffees"
               :key="index">
                 <v-card
                   class="mx-auto mb-2"
                   max-width="378"
                   min-height="500"
-                  style="display: flex; flex-direction: column; border-radius: 12px;"
+                  style="display: flex; flex-direction: column; border-radius: 12px; "
                   color="#2c3a4a"
                 >
                   <v-img
@@ -369,7 +369,7 @@ export default {
 
 .about-us {
   padding-top: 60px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .my-education {
@@ -413,7 +413,7 @@ export default {
   padding-left: 130px;
   padding-right: 130px;
   padding-top: 100px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .project-header {
@@ -443,7 +443,7 @@ export default {
   }
 
   .titlesm-row {
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -491,11 +491,14 @@ export default {
   .about-us {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 120px;
   }
   .content-row {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 100px;
+    font-size: 18px;
   }
 
   .my-education {

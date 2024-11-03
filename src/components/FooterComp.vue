@@ -30,7 +30,7 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Thanks for Visiting our Website, Feel free to hit us on our social media!
+        Thanks for Visiting my Website, Feel free to hit me on my social media!
       </v-card-text>
       <v-divider></v-divider>
       <v-card-text class="white--text">

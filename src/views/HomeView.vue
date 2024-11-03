@@ -38,6 +38,23 @@ export default {
             src: '../src/assets/background.svg',
           },
         ],
+        years: [
+          {
+            color: 'cyan',
+            year: '2021-2022',
+            title: 'Video Editor',
+            company: 'Turah Parthayana',
+            desc: 'Online Video Editor untuk Channel Turah Parthayana'
+          },
+          {
+            color: 'green',
+            year: '2023-Now',
+            title: 'Fullstack Developer',
+            company: 'PT Transforma Dinamika Unggul',
+            desc: 'Bekerja menjadi Fullstack Web Developer untuk PT Transforma Dinamika Unggul'
+          },
+          
+        ],
         coffees: [
           {
             id: 1,
@@ -235,6 +252,43 @@ export default {
       </v-row>
     </v-container>
     <v-container fluid style="background-color: #0d1b2a">
+      <v-row class="about-us">
+        <v-col class="my-education" cols="12" data-aos="fade-up" align-self="center">
+          <v-row class="title-row mb-7" justify="center">
+            <a style="font-weight: 800;">My Career</a>
+          </v-row>
+          <v-row class="career-row px-2" justify="center">
+            <v-timeline align="start" style="padding-bottom: 100px;">
+              <v-timeline-item
+                v-for="(year, i) in years"
+                :key="i"
+                :dot-color="year.color"
+                size="small"
+              >
+                <template v-slot:opposite>
+                  <div
+                    :class="`pt-1 headline font-weight-bold text-${year.color}`"
+                    v-text="year.year"
+                  ></div>
+                </template>
+                <div>
+                  <p :class="`mt-n1 headline font-weight-bold text-${year.color}`" :style="{ color: '#FFF', fontSize: isMobile ? '16px' : '20px' }">
+                      {{ year.company }}
+                  </p>
+                  <p :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`" :style="{ color: '#FFF', fontSize: isMobile ? '12px' : '20px' }">
+                      {{ year.title }}
+                  </p>
+                  <p :class="`mb-4`" :style="{ width: isMobile ? '120px' : '500px', color: '#FFF', fontSize: isMobile ? '14px' : '18px' }">
+                      {{ year.desc }}
+                  </p>
+                </div>
+              </v-timeline-item>
+            </v-timeline>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container fluid style="background-color: #1b263b">
       <v-row class="about-us" >
         <v-col cols="12" md="6" class="align-self-center my-education" data-aos="fade-up">
           <v-row class="subtitle-row" >
@@ -276,7 +330,7 @@ export default {
         </v-col>
       </v-row>
     </v-container>
-      <v-container fluid style="background-color: #1b263b">
+      <v-container fluid style="background-color: #0d1b2a">
         <v-row class="projects" >
           <v-col align-self="center">
             <v-row>
@@ -288,28 +342,32 @@ export default {
               </v-col>
             </v-row>
             <v-row class="pt-7 pb-5">
-              <v-col cols="12" sm="3" v-for="(item, index) in coffees"
+              <v-col cols="6" sm="3" v-for="(item, index) in coffees"
               :key="index">
-                <v-card
-                  class="mx-auto mb-2"
-                  max-width="378"
-                  min-height="500"
-                  style="display: flex; flex-direction: column; border-radius: 12px; "
+              <v-card
+                  class="mx-1 mb-2 mobile-card"
+                  :max-width="isMobile ? '300' : '378'"
+                  :min-height="isMobile ? '400' : '500'"
+                  style="display: flex; flex-direction: column; border-radius: 12px;"
                   color="#2c3a4a"
                 >
                   <v-img
                     class="align-end text-white"
                     :src="item.img"
                     aspect-ratio="4/3"
-                    max-height="300"
+                    :max-height="isMobile ? '150' : '300'"
                     cover
                   >
                   </v-img>
                   <v-card-title class="px-3 pt-2">
-                    <p style="font-weight: 700; color: #FFF;">{{ item.title }}</p>
+                    <p :style="{ fontWeight: '700', color: '#FFF', fontSize: isMobile ? '14px' : '20px' }">
+                      {{ item.title }}
+                    </p>
                   </v-card-title>
                   <v-card-text class="px-3 mb-2">
-                    <p style="font-weight: 300; color: #FFF;">{{ item.desc }}</p>
+                    <p :style="{ fontWeight: '300', color: '#FFF', fontSize: isMobile ? '11px' : '14px' }">
+                      {{ item.desc }}
+                    </p>
                   </v-card-text>
                 </v-card>
               </v-col>
@@ -380,6 +438,11 @@ export default {
 .content-row {
   padding-top: 0;
   padding-right: 100px;
+  font-size: 20px;
+}
+
+.career-row {
+  padding-top: 0;
   font-size: 20px;
 }
 
@@ -501,6 +564,14 @@ export default {
     font-size: 18px;
   }
 
+  .career-row {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 100px;
+    font-size: 18px;
+  }
+
   .my-education {
     padding-left: 10px;
   }   
@@ -519,6 +590,10 @@ export default {
     font-size: 24px; 
     font-weight: 600;
     color: #212529
+  }
+
+  .mobile-card {
+    height: 200px;
   }
 }
 

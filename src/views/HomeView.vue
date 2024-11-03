@@ -125,36 +125,38 @@ export default {
 
 <template>
   <ToolbarComp>
-    <v-container fluid data-aos="fade-up">
+    <v-container fluid style="background-color: #0d1b2a">
       <v-row class="about-us">
-        <v-col cols="12" md="6">
-          <v-img
-            cover
-            :height="isMobile ? 350 : 800"
-            src="https://i.postimg.cc/pdcsSThS/rescale.png"
-            class="fade-img"
-          >
-          <div class="fade-overlay"></div>
-        </v-img>
+        <v-col cols="12" md="6" align-self="center">
+          <v-row justify="center">
+            <v-avatar
+                     :size="isMobile ? 200 : 450"
+                    >
+                      <v-img
+                        alt="Ava"
+                        src="https://i.postimg.cc/pdcsSThS/rescale.png"
+                      ></v-img>
+            </v-avatar>
+          </v-row>
         </v-col>
-        <v-col cols="12" md="6" class="align-self-center">
+        <v-col cols="12" md="6" align-self="center">
           <v-row class="titlesm-row" >
-            <a class="fw-semibold text-dark"> Web Developer | Fullstack Developer </a>
+            <a class="fw-semibold text-light"> Web Developer | Fullstack Developer </a>
           </v-row>
           <v-row class="title-row" >
-            <a class="fw-bolder text-dark lh-1"> Farrel Ahmad Darmawan </a>
+            <a class="fw-bolder text-light lh-1"> Farrel Ahmad Darmawan </a>
           </v-row>
           <v-row class="content-row">
-            <p class="lh-base">
+            <p class="lh-base text-light">
               I am a graduate of Telkom University Surabaya, Software Engineering program. I have experience and expertise in developing applications using technologies such as Laravel, Vue.js, AdonisJS, and managing databases like PostgreSQL and MySQL. I excel in creating efficient and scalable web-based solutions.
             </p>
           </v-row>
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid data-aos="fade-up">
-      <v-row class="mt-5 about-us">
-        <v-col class="align-self-center my-education">
+    <v-container fluid style="background-color: #1b263b">
+      <v-row class="about-us">
+        <v-col class="align-self-center my-education" data-aos="fade-up">
           <v-row class="subtitle-row" >
             <a style="font-weight: 600;"> &mdash; Tentang Saya </a>
           </v-row>
@@ -162,14 +164,14 @@ export default {
             <a style="font-weight: 800;">My Education </a>
           </v-row>
         </v-col>
-        <v-col class="align-self-center">
+        <v-col class="align-self-center" data-aos="fade-up">
           <v-row class="content-row">
             <v-timeline align="start" side="end">
               <v-timeline-item
                 dot-color="pink"
                 size="small"
               >
-                <div class="d-flex">
+                <div class="d-flex text-light">
                   <strong class="me-4">2014</strong>
                   <div>
                     <strong>SDIT At-Taqwa</strong>
@@ -184,7 +186,7 @@ export default {
                 dot-color="teal-lighten-3"
                 size="small"
               >
-                <div class="d-flex">
+                <div class="d-flex text-light">
                   <strong class="me-4">2017</strong>
                   <div>
                     <strong>SMP Negeri 1 Surabaya</strong>
@@ -199,7 +201,7 @@ export default {
                 dot-color="pink"
                 size="small"
               >
-                <div class="d-flex">
+                <div class="d-flex text-light">
                   <strong class="me-4">2020</strong>
                   <div>
                     <strong>SMA Negeri 2 Surabaya</strong>
@@ -214,7 +216,7 @@ export default {
                 dot-color="teal-lighten-3"
                 size="small"
               >
-                <div class="d-flex">
+                <div class="d-flex text-light">
                   <strong class="me-4">2024</strong>
                   <div>
                     <strong>Telkom University Surabaya</strong>
@@ -229,9 +231,9 @@ export default {
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid data-aos="fade-up">
-      <v-row class="mt-5 about-us">
-        <v-col cols="12" md="6" class="align-self-center my-education">
+    <v-container fluid style="background-color: #0d1b2a">
+      <v-row class="about-us" >
+        <v-col cols="12" md="6" class="align-self-center my-education" data-aos="fade-up">
           <v-row class="subtitle-row" >
             <a style="font-weight: 800;"> &mdash; Tentang Saya </a>
           </v-row>
@@ -239,7 +241,7 @@ export default {
             <a style="font-weight: 800;"> My Tech Stack </a>
           </v-row>
         </v-col>
-        <v-col cols="12" md="6" class="align-self-center">
+        <v-col cols="12" md="6" class="align-self-center" data-aos="fade-up">
           <v-row class="content-row">
             <v-col 
               v-for="item in tech.slice(0, 5)" 
@@ -251,10 +253,10 @@ export default {
                 :color="item.color" 
                 :size="isMobile ? 60 : 80">
               </v-icon>
-              <p style="font-weight: bold; font-size: 12px;">{{ item.title }}</p>
+              <p style="font-weight: 500; font-size: 12px; color:white">{{ item.title }}</p>
             </v-col>
           </v-row>
-          <v-row class="content-row">
+          <v-row class="content-row mt-9">
             <v-col 
               v-for="item in tech.slice(5)" 
               :key="item.id" 
@@ -265,57 +267,21 @@ export default {
                 :color="item.color" 
                 :size="isMobile ? 60 : 80">
               </v-icon>
-              <p style="font-weight: bold; font-size: 12px;">{{ item.title }}</p>
+              <p style="font-weight: 500; font-size: 12px; color:white">{{ item.title }}</p>
             </v-col>
           </v-row>
         </v-col>
       </v-row>
     </v-container>
-    <v-container data-aos="fade-up" fluid style="background-color: #EEEEEE">
-        <v-row class="service" 
-        >
-          <v-col cols="12">
-            <v-card
-              class="mx-auto p-5"
-              style="border-radius: 24px;"
-            >
-            <v-row>
-              <v-col align-self="center" >
-                <v-row justify="center">
-                  <v-avatar
-                   :size="isMobile ? 200 : 450"
-                  >
-                    <v-img
-                      alt="Ava"
-                      src="https://wallpapercave.com/wp/wp7926787.jpg"
-                    ></v-img>
-                  </v-avatar>
-                </v-row>
-                <v-row justify="center">
-                  <a class="title-profile"> Mr. Riz Xtar</a>
-                </v-row>
-              </v-col>
-              <v-col class="align-self-center">
-                <v-row class="text-owner">
-                  <p>
-                    "Terima kasih sudah datang ke kafe saya dan membuat saya makin kaya. Kalian beli kopi, saya dapat untung! Semoga uang kalian cukup untuk balik lagi besok. Jangan lupa ajak teman, biar saya makin sukses."
-                  </p>
-                </v-row>
-              </v-col>
-            </v-row>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-container fluid data-aos="fade-up">
-        <v-row class="projects">
-          <v-col>
+      <v-container fluid style="background-color: #1b263b">
+        <v-row class="projects" >
+          <v-col align-self="center">
             <v-row>
               <v-col>
-                <a class="project-header"> My Projects </a>
+                <a class="project-header text-white"> My Projects </a>
               </v-col>
               <v-col class="text-end align-end me-5">
-                <a @click="PushToOurMenus" style="font-size: 15px; font-weight: 200; cursor: pointer"> See More <v-icon icon="mdi-arrow-right-thin" size="small"></v-icon> </a>
+                <a @click="PushToOurMenus" style="font-size: 15px; font-weight: 200; color:white; cursor: pointer"> See More <v-icon icon="mdi-arrow-right-thin" size="small"></v-icon> </a>
               </v-col>
             </v-row>
             <v-row class="pt-7">
@@ -326,6 +292,7 @@ export default {
                   max-width="378"
                   min-height="500"
                   style="display: flex; flex-direction: column; border-radius: 12px;"
+                  color="#2c3a4a"
                 >
                   <v-img
                     class="align-end text-white"
@@ -346,10 +313,10 @@ export default {
                       readonly
                     />
 
-                    <p style="font-weight: 700; color: #967259;">Rp. 20.000</p>
+                    <p style="font-weight: 700; color: #FFF;">Rp. 20.000</p>
                   </v-card-title>
                   <v-card-text>
-                    <a class="text-h5 text-dark font-weight-black p-2"> {{ item.title }}</a>
+                    <a class="text-h5 text-light font-weight-black p-2"> {{ item.title }}</a>
                   </v-card-text>
                   <v-card-text class="px-2 mb-2">
                     <p >{{ item.desc }}</p>
@@ -412,16 +379,17 @@ export default {
 
 .about-us {
   padding-top: 60px;
-  margin-bottom: 80px;
+  height: 100vh;
 }
 
 .my-education {
   padding-left: 80px;
+  color: white
 }
 
 .content-row {
   padding-top: 0;
-  padding-right: 80px;
+  padding-right: 100px;
   font-size: 20px;
 }
 
@@ -454,8 +422,8 @@ export default {
 .projects {
   padding-left: 130px;
   padding-right: 130px;
-  padding-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 100px;
+  height: 100vh;
 }
 
 .project-header {

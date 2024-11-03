@@ -1,39 +1,39 @@
 <template>
     <v-layout>
       <v-app-bar 
-      style="position: fixed; background: #FFF;"
-      class="shadow-sm p-3 mb-5 bg-body rounded"
+      style="position: fixed;  backdrop-filter: blur(24px);"
+      color="transparent"
+      class="shadow-sm p-3 mb-5"
       fixed
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
       >
-        <v-toolbar-title class="ms-7"><a><b> Portofolio </b></a></v-toolbar-title>
+        <v-toolbar-title class="ms-7 text-light"><a><b> Portofolio </b></a></v-toolbar-title>
         <v-spacer></v-spacer>
         <div class="menu hidden-sm-and-down mx-2 pe-12">
             <a
                 v-for="item in menuItems"
                 :key="item.title"
-                @click="navigateTo(item.link)"
-                class="menu-link mx-7"
+                @click="navigateTo(item.link)" 
+                class="menu-link mx-7 text-light"
                 :class="{ 'active-link': isActive(item.link), 'inactive-link': isInactive(item.link) }"
                 style="cursor: pointer; font-size: 15px;"
                 >
                 {{ item.title }}
             </a>
-        <button type="button" class="btn text-white mx-3" style="background-color: #967259;"><v-icon class="me-2" icon="mdi-whatsapp"></v-icon>Contact Me</button>
+        <button type="button" class="btn text-white mx-3" style="background-color: #FFF;"><v-icon class="me-2" color="#0d1b2a" icon="mdi-download-box-outline"></v-icon><a style="color: #0d1b2a; font-size: 18px;">CV Download</a></button>
         </div>
 
         <v-btn icon @click="toggleDrawer" class="hidden-md-and-up">
-        <v-icon>mdi-menu</v-icon>
+        <v-icon class="text-light">mdi-menu</v-icon>
         </v-btn>
       </v-app-bar>
       <v-navigation-drawer v-model="drawer" 
       :location="$vuetify.display.mobile ? 'top' : undefined"
-      color="light"
-      style="position: fixed; margin-top: 20px;"
+      style="position: fixed; margin-top: 20px; background-color: transparent; backdrop-filter: blur(24px);"
       temporary>
         <v-list dense>
-          <v-list-item v-for="item in menuItems" :key="item.title" @click="drawer = false" color="primary">
+          <v-list-item v-for="item in menuItems" :key="item.title" @click="drawer = false" color="transparent">
             <v-list-item-content>
               <v-list-item-title  @click="navigateTo(item.link)" 
               class="menu-link-mobile">{{ item.title }}</v-list-item-title>
@@ -42,7 +42,7 @@
         </v-list>
       </v-navigation-drawer>
   
-      <v-main  id="scrolling-techniques-7">
+      <v-main id="scrolling-techniques-7" class="pt-0">
         <slot id="scrolling-techniques-7"></slot>
       </v-main>
     </v-layout>

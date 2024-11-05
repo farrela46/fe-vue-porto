@@ -346,7 +346,7 @@ export default {
             <v-row class="pt-7 pb-5">
               <v-col cols="6" sm="3" v-for="(item, index) in coffees"
               :key="index">
-              <v-card
+              <!-- <v-card
                   class="mx-1 mb-2 mobile-card"
                   :max-width="isMobile ? '300' : '378'"
                   :min-height="isMobile ? '400' : '500'"
@@ -356,7 +356,6 @@ export default {
                   <v-img
                     class="align-end text-white"
                     :src="item.img"
-                    aspect-ratio="4/3"
                     :max-height="isMobile ? '150' : '300'"
                     cover
                   >
@@ -371,7 +370,14 @@ export default {
                       {{ item.desc }}
                     </p>
                   </v-card-text>
-                </v-card>
+                </v-card> -->
+                <div class="card mx-2 card-style mb-2" >
+                  <img class="card-img-top p-2" style="border-radius: 14px;" :src="item.img" alt="Card image cap">
+                  <h5 class="card-title p-2"> {{ item.title }}</h5>
+                  <div class="card-body p-2">
+                    <p class="card-text card-desc">{{ item.desc }}</p>
+                  </div>
+                </div>
               </v-col>
             </v-row>
           </v-col>
@@ -486,6 +492,24 @@ export default {
   font-weight: 600;
   color: #212529
 }
+.card-style {
+  background-color: #2c3a4a;
+  color: #FFF;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-desc {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  height: auto;
+}
 
 
 @media (max-width: 600px) {
@@ -596,6 +620,14 @@ export default {
 
   .mobile-card {
     height: 200px;
+  }
+
+  .card-style {
+    height: 350px;
+  }
+  .card-desc {
+    font-size: 11px;
+    -webkit-line-clamp: none; /* Adjust line clamp for mobile if needed */
   }
 }
 

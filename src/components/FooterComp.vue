@@ -20,7 +20,6 @@
           v-for="icon in icons"
           :key="icon"
           class="mx-3 white--text"
-          icon
           size="small"
         >
           <v-icon size="24px">
@@ -47,7 +46,6 @@
     data: () => ({
       icons: [
         'mdi-facebook',
-        'mdi-twitter',
         'mdi-linkedin',
         'mdi-instagram',
       ],

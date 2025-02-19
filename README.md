@@ -1,7 +1,7 @@
 
 # FE Vue Protofolio Farrel
 
-Portofolio Saya
+Portofolio Farrel
 
 
 ## Tech Stack

@@ -1,6 +1,10 @@
 <script>
 import ToolbarComp from '@/components/ToolbarComp.vue'
 import FooterComp from '@/components/FooterComp.vue'
+import AAU from '@/assets/AAUicon.png';
+import Oscar from '@/assets/OscarBookstore.png';
+import Yadi from '@/assets/YaDipinjam.png';
+import Saya from '@/assets/rescale.png';
 
 export default {
   name: 'Our Menus',
@@ -46,10 +50,10 @@ export default {
         coffees: [
           {
             id: 1,
-            img: 'https://www.seriouseats.com/thmb/x5dQAByuE9saNvybQ4sjTU1dHG8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230621-SEA-DalognaCoffee-LorenaMasso-hero-e6a0eb179a2d457fb40c059d91594c35.jpg',
-            title: 'Dalgona Coffee',
+            img: Oscar,
+            title: 'Toko Buku Oscar',
             rating: '4',
-            desc: 'Dalgona Coffee is a beverage originating from Macau made by whipping equal parts instant coffee powder, sugar, and hot water until it becomes creamy and then adding it to cold or hot milk.',
+            desc: 'Aplikasi penjualan dan pembelian buku yang mendukung transaksi secara online maupun onsite, memudahkan pelanggan dalam mencari dan mendapatkan buku.',
             category: [
               { 
                 id: 1,
@@ -63,10 +67,10 @@ export default {
           },  
           {
             id: 2,
-            img: 'https://i.insider.com/610c373d2a24d0001861ede4?width=1136&format=jpeg',
-            title: 'Black Coffee',
+            img: Yadi,
+            title: 'YaDipinjam',
             rating: '4.5',
-            desc: 'Black Coffee offering bold, high-quality brews with a lighthearted twist. Perfect for those who enjoy their coffee with a side of laughter!',
+            desc: 'Website perpustakaan kolektif yang memungkinkan pengguna meminjam dan meminjamkan buku secara langsung antar pengguna.',
             category: [
               { 
                 id: 1,
@@ -80,10 +84,10 @@ export default {
           },
           {
             id: 3,
-            img: 'https://cdn.loveandlemons.com/wp-content/uploads/2023/06/iced-matcha-latte.jpg',
-            title: 'Matcha Latte',
+            img: AAU,
+            title: 'CDC AAU',
             rating: '4.5',
-            desc: 'MatchaLatte is a fun parody of classic matcha drinks, blending earthy flavors with humor. Enjoy a delicious, high-quality latte experience with a playful twist for matcha lovers!',
+            desc: 'Aplikasi untuk membantu pengguna mengembangkan karakter pribadi dengan fitur evaluasi, penilaian untuk Taruna Akademi Angkatan Udara Indonesia.',
             category: [
               { 
                 id: 1,
@@ -97,78 +101,10 @@ export default {
           },
           {
             id: 4,
-            img: 'https://www.healthyfood.com/wp-content/uploads/2016/11/Dark-hot-chocolate-1.jpg',
-            title: 'Black Chocolate',
+            img: AAU,
+            title: 'Administrasi AAU',
             rating: '3.5',
-            desc: 'Black Chocolate is a playful take on dark chocolate, blending rich, bold flavors with a touch of humor. Perfect for those who enjoy deep, intense chocolate with a fun, lighthearted twist!',
-            category: [
-              { 
-                id: 1,
-                name: "3D Model"
-              },
-              { 
-                id: 2,
-                name: "Animation"
-              }
-            ]
-          },
-          {
-            id: 5,
-            img: 'https://www.bitkaorigin.com/assets/myback/js/elFinder/files/Americano-coffee.jpg',
-            title: 'Americano',
-            rating: '2.5',
-            desc: 'Americano adalah minuman kopi yang terbuat dari espresso dan air panas. Kopi ini memiliki rasa yang lebih ringan dibandingkan espresso karena dicampur dengan air. Americano merupakan kopi yang populer di seluruh dunia',
-            category: [
-              { 
-                id: 1,
-                name: "3D Model"
-              },
-              { 
-                id: 2,
-                name: "Animation"
-              }
-            ]
-          },
-          {
-            id: 6,
-            img: 'https://cdn0-production-images-kly.akamaized.net/AfHTJcbtPM-CBHxG7Mc3JVfwhwE=/357x0:981x624/1200x1200/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4100082/original/085004000_1658734379-exterior-banner_2.jpg',
-            title: 'Espresso',
-            rating: '3.5',
-            desc: 'Suzuki Spresso hadir dengan panel instrumen yang stylish, ergonomis, dan gampang dijangkau. Semakin lengkap dengan kabin yang lebih lega dan nyaman.',
-            category: [
-              { 
-                id: 1,
-                name: "3D Model"
-              },
-              { 
-                id: 2,
-                name: "Animation"
-              }
-            ]
-          },
-          {
-            id: 7,
-            img: 'https://www.elespectador.com/resizer/L_d9v6uuxjkcZkONzjrpOAr9Lus=/arc-anglerfish-arc2-prod-elespectador/public/3RLSJX3IBNA55F5OZPNWSLSGQE.jpg',
-            title: 'Kapucino',
-            rating: '4.5',
-            desc: 'Kapucino adalah minuman kopi khas Italia yang dibuat dari espreso dan susu, tetapi referensi lain juga ada yang menyebutkan bahwa kapucino berawal dari biji biji kopi tentara Turki yang tertinggal setelah peperangan yang dipimpin oleh Kara Mustapha Pasha di Wina',
-            category: [
-              { 
-                id: 1,
-                name: "3D Model"
-              },
-              { 
-                id: 2,
-                name: "Animation"
-              }
-            ]
-          },
-          {
-            id: 8,
-            img: 'https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2024/02/21/ice-tea-with-mint_144627-41785-926817588.jpg',
-            title: 'Teh',
-            rating: '4.5',
-            desc: 'Es teh adalah minuman teh yang disajikan dingin dengan es batu. Biasanya, Es teh seringkali ditambahkan rasa seperti melati, dan buah-buahan seperti lemon, ceri, dan stroberi, atau susu. Es teh adalah minuman yang sering diminum saat siang hari karena suhu udara yang panas.',
+            desc: 'Sistem untuk membantu pengguna dalam administrasi untuk Akademi Angkatan Udara Indonesia.',
             category: [
               { 
                 id: 1,
@@ -234,128 +170,39 @@ export default {
 
 <template>
   <ToolbarComp>
-    <v-container fluid>
-      <v-row class="mt-5">
-        <v-col class="carousel-block">
-           <v-carousel
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-center"
-            :show-arrows="false"
-            hide-delimiter-background
-            class="carousel-block"
-          >
-            <v-carousel-item
-              v-for="(item, i) in items"
-              :key="i"
-              :src="item.src"
-              class="carousel-item"
-              cover
-            >
-              <v-sheet
-                class="transparent-sheet"
-              >
-                <div class="d-flex fill-height justify-center align-center">
-                  <div class="text-content text-white">
-                    <h3>Our Menus</h3>
-                  </div>
-                </div>
-              </v-sheet>
-            </v-carousel-item>
-          </v-carousel>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-container fluid >
-        <v-row class="projects"
-        >
-          <v-col cols="12" sm="1" class="sidebar">
+    <v-container fluid style="background-color: #0d1b2a">
+        <v-row class="projects">
+        <v-col cols="12" sm="2" class="sidebar">
             <v-row class="align-center text-navbar">
-              <a class="me-7 text-muted">Search by Category</a>
+              <a class="me-7 text-white text-muted">Search by Category</a>
               <v-chip-group
                 column
-                color="indigo"
+                color="teal-lighten-4"
                 selected-class="text-primary"
               >
                 <v-chip
                   v-for="item in category"
                   :key="item.id"
-                  class="white--text mb-2"
+                  class="text-white mb-2"
                 >
                   <a>{{ item.name }}</a>
                 </v-chip>
               </v-chip-group>
             </v-row>
           </v-col>
-          <v-col cols="12" sm="11">
-            <v-card
-              class="mx-auto mb-4"
-              color="surface-light"
-              max-width="400"
-            >
-              <v-card-text>
-                <v-text-field
-                  :loading="loading"
-                  append-inner-icon="mdi-magnify"
-                  density="compact"
-                  label="Search Menus"
-                  variant="solo"
-                  hide-details
-                  single-line
-                  @click:append-inner="onClick"
-                ></v-text-field>
-              </v-card-text>
-            </v-card>
-            <v-virtual-scroll
-              :items="chunkedCoffees"
-              max-height="1000"
-              item-height="500"
-            >
-              <template v-slot:default="{ item }">
-                <v-row>
-                  <v-col
-                    v-for="card in item"
-                    :key="card.id"
-                    cols="6"
-                    sm="1"
-                    md="3"
-                  >
-                    <v-card
-                      class=" mb-4 mx-1"
-                      max-width="378"
-                      min-height="500"
-                      style="display: flex; flex-direction: column; border-radius: 12px;"
-                    >
-                      <v-img
-                        class="align-end text-white"
-                        :src="card.img"
-                        aspect-ratio="1/1"
-                        max-height="300"
-                        cover
-                      >
-                      </v-img>
-                      <v-card-title class="px-2">
-                        <v-rating
-                          hover
-                          :length="5"
-                          :size="32"
-                          :model-value="card.rating"
-                          active-color="primary"
-                          readonly
-                          half-increments
-                        />
-                        <p style="font-weight: 700; color: #967259;">Rp. 20.000</p>
-                      </v-card-title>
-                      <v-card-text>
-                        <a class="text-h5 text-dark font-weight-black p-2">{{ card.title }}</a>
-                      </v-card-text>
-                      <v-card-text class="px-2 mb-2">
-                        <p>{{ card.desc }}</p>
-                      </v-card-text>
-                    </v-card>
-                  </v-col>
-                </v-row>
-              </template>
-            </v-virtual-scroll>
+          <v-col cols="12" sm="10">
+            <v-row class="pt-7 pb-5 mb-5">
+              <v-col cols="6" sm="3" v-for="(item, index) in coffees"
+              :key="index">
+                <div class="card mx-2 card-style mb-2 h-100" >
+                  <img class="card-img-top p-2" style="border-radius: 14px;" :src="item.img" alt="Card image cap">
+                  <h5 class="card-title p-2"> {{ item.title }}</h5>
+                  <div class="card-body p-2">
+                    <p class="card-text card-desc">{{ item.desc }}</p>
+                  </div>
+                </div>
+              </v-col>
+            </v-row>
           </v-col>
         </v-row>
     </v-container>
@@ -419,7 +266,6 @@ export default {
   padding-left: 130px;
   padding-right: 130px;
   padding-top: 60px;
-  margin-bottom: 60px;
 }
 
 .service-paragraph{
@@ -427,11 +273,31 @@ export default {
 }
 
 .projects {
+  padding-top: 120px;
   padding-left: 130px;
   padding-right: 130px;
-  padding-top: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 200px;
 }
+
+.card-style {
+  background-color: #2c3a4a;
+  color: #FFF;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-desc {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  height: auto;
+}
+
 
 
 @media (max-width: 600px) {
@@ -490,6 +356,17 @@ export default {
   .projects {
     padding-left: 10px;
     padding-right: 10px;
+  }
+   .mobile-card {
+    height: 200px;
+  }
+
+  .card-style {
+    height: 350px;
+  }
+  .card-desc {
+    font-size: 11px;
+    -webkit-line-clamp: none; /* Adjust line clamp for mobile if needed */
   }
 }
 

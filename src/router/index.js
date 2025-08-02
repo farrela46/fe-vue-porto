@@ -8,28 +8,28 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/HomeView.vue')
+      component: () => import('../views/newLayout/HomeNew.vue')
     },
-    {
-      path: '/projects',
-      name: 'My Project',
-      component: () => import('../views/MyProjectsView.vue')
-    },
-    {
-      path: '/teams',
-      name: 'OurTeams',
-      component: () => import('../views/OurTeams.vue')
-    },
-    {
-      path: '/login',
-      name: 'Login',
-      component: () => import('../views/LoginView.vue')
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
-    }
+    // {
+    //   path: '/projects',
+    //   name: 'My Project',
+    //   component: () => import('../views/MyProjectsView.vue')
+    // },
+    // {
+    //   path: '/teams',
+    //   name: 'OurTeams',
+    //   component: () => import('../views/OurTeams.vue')
+    // },
+    // {
+    //   path: '/login',
+    //   name: 'Login',
+    //   component: () => import('../views/LoginView.vue')
+    // },
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   component: () => import('../views/AboutView.vue')
+    // }
   ]
 })
 

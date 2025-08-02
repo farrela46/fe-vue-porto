@@ -16,6 +16,7 @@
     "@zapadale/vue3-confirm-dialog": "^1.0.2",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "gsap": "^3.13.0",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5",
     "vuetify": "^3.5.4"

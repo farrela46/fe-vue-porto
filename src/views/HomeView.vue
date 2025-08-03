@@ -57,7 +57,7 @@ export default {
           },
           
         ],
-        coffees: [
+        projects: [
           {
             id: 1,
             img: Oscar,

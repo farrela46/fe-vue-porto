@@ -43,21 +43,6 @@
                 </a>
             </div>
 
-
-
-
-            <!-- <div class="d-flex gap-3 mt-3 home-anim">
-                <a href="https://github.com/username" target="_blank" class="social-icon">
-                    <iconify-icon icon="mdi:github" width="28" height="28"></iconify-icon>
-                </a>
-                <a href="https://linkedin.com/in/username" target="_blank" class="social-icon">
-                    <iconify-icon icon="mdi:linkedin" width="28" height="28"></iconify-icon>
-                </a>
-                <a href="https://instagram.com/username" target="_blank" class="social-icon">
-                    <iconify-icon icon="mdi:instagram" width="28" height="28"></iconify-icon>
-                </a>
-            </div> -->
-
             <div class="scroll-indicator mt-5 pt-4 home-anim justify-content-center" @click="scrollToAbout">
                 <div class="pill">
                     <div class="dot"></div>
@@ -79,6 +64,18 @@
                 <div class="col-lg-7 mb-5">
                     <h3 class="fw-bold">FARREL AHMAD DARMAWAN</h3>
                     <p class="text-purple">Fullstack Web Developer</p>
+                    <div class="d-flex gap-3 mt-3 home-anim">
+                        <a href="https://github.com/farrela46" target="_blank" class="social-icon">
+                            <iconify-icon icon="mdi:github" width="28" height="28"></iconify-icon>
+                        </a>
+                        <a href="https://linkedin.com/in/farrelahmad" target="_blank" class="social-icon">
+                            <iconify-icon icon="mdi:linkedin" width="28" height="28"></iconify-icon>
+                        </a>
+                        <a href="https://instagram.com/farrel_oxy" target="_blank" class="social-icon">
+                            <iconify-icon icon="mdi:instagram" width="28" height="28"></iconify-icon>
+                        </a>
+                    </div>
+
                     <p>
                         I started my journey as a video editor, which unexpectedly sparked my interest in the world of
                         technology and problem-solving through software development.
@@ -119,7 +116,8 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-ui" aria-expanded="false">
-                                    <iconify-icon icon="bx:layer" width="28" height="28"></iconify-icon>&nbsp; UI Frameworks & Libraries
+                                    <iconify-icon icon="bx:layer" width="28" height="28"></iconify-icon>&nbsp;
+                                    Frameworks
                                 </button>
                             </h2>
                             <div id="flush-ui" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
@@ -133,7 +131,7 @@
                                         </div>
                                     </div>
                                     <!-- Laravel -->
-                                    <div class="skill-card border-gradient-purple">
+                                    <div class="skill-card border-gradient-red">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
                                             width="32" />
                                         <div>
@@ -149,23 +147,31 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-lang" aria-expanded="false">
-                                    <iconify-icon icon="ooui:code" width="28" height="28"></iconify-icon>&nbsp; Languages
+                                    <iconify-icon icon="ooui:code" width="28" height="28"></iconify-icon>&nbsp;
+                                    Languages
                                 </button>
                             </h2>
                             <div id="flush-lang" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
                                 <div class="accordion-body d-flex flex-wrap gap-3">
-                                    <div class="skill-card border-gradient-blue">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                                            width="32" />
-                                        <div>
-                                            <strong>TypeScript</strong>
-                                        </div>
-                                    </div>
                                     <div class="skill-card border-gradient-yellow">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                                             width="32" />
                                         <div>
                                             <strong>JavaScript</strong>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card border-gradient-bluepk">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1422px-PHP-logo.svg.png?20180502235434"
+                                            width="32" />
+                                        <div>
+                                            <strong>PHP</strong>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card border-gradient-blue">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                            width="32" />
+                                        <div>
+                                            <strong>TypeScript</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -177,7 +183,8 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-design" aria-expanded="false">
-                                   <iconify-icon icon="fluent:design-ideas-20-regular" width="28" height="28"></iconify-icon>&nbsp; Design
+                                    <iconify-icon icon="fluent:design-ideas-20-regular" width="28"
+                                        height="28"></iconify-icon>&nbsp; Design
                                 </button>
                             </h2>
                             <div id="flush-design" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
@@ -197,8 +204,7 @@
                                         </div>
                                     </div>
                                     <div class="skill-card border-gradient-cyan">
-                                        <img src="https://icon.icepanel.io/Technology/svg/Veutify.svg"
-                                            width="32" />
+                                        <img src="https://icon.icepanel.io/Technology/svg/Veutify.svg" width="32" />
                                         <div>
                                             <strong>Vuetify</strong>
                                         </div>
@@ -212,7 +218,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-tools" aria-expanded="false">
-                                   <iconify-icon icon="mdi:tools" width="28" height="28"></iconify-icon>&nbsp; Tools
+                                    <iconify-icon icon="mdi:tools" width="28" height="28"></iconify-icon>&nbsp; Tools
                                 </button>
                             </h2>
                             <div id="flush-tools" class="accordion-collapse collapse" data-bs-parent="#techAccordion">
@@ -232,9 +238,6 @@
             </div>
         </div>
     </section>
-
-
-
 
     <!-- Section My Journey -->
     <section id="my-journey" class="my-journey-section ">
@@ -295,12 +298,82 @@
         </div>
     </section>
 
+    <section id="project" class="project-section min-vh-100 px-3 text-white" style="background-color: #0e0e10;">
+        <div class="container py-5">
+            <h2 class="text-gradient text-center fw-bold mb-3">Project</h2>
+            <p class="text-center mb-5">Recent project participated</p>
+
+            <div id="projectCarousel" class="carousel slide position-relative responsive-abt" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div v-for="(chunk, index) in chunkedProjects" :key="index" class="carousel-item"
+                        :class="{ active: index === 0 }">
+                        <div class="row g-4 justify-content-center align-items-stretch">
+                            <div v-for="project in chunk" :key="project.id" class="col-12 col-md-6 col-lg-4">
+                                <div class="card text-white h-100 shadow rounded-4 overflow-hidden project-card"
+                                    style="background-color: #1b1127; min-height: 480px;">
+                                    <div class="position-relative">
+                                        <img :src="project.img" class="card-img-top object-fit-cover project-img"
+                                            :alt="project.title" />
+                                        <span
+                                            class="position-absolute top-0 start-0 m-3 badge text-white rounded-pill px-3 py-2 shadow"
+                                            style="background-color: #7e22ce;">
+                                            Web Development
+                                        </span>
+                                    </div>
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <h5 class="card-title">{{ project.title }}</h5>
+                                        <p class="card-text text-truncate-3">{{ project.desc }}</p>
+                                        <div class="d-flex flex-wrap gap-2 mb-3">
+                                            <span v-for="cat in project.category" :key="cat.id"
+                                                class="badge rounded-pill border border-purple-400 text-purple-200 bg-dark"
+                                                style="border: 1px solid #9f7aea; background-color: rgba(159, 122, 234, 0.1);">
+                                                {{ cat.name }}
+                                            </span>
+                                        </div>
+                                        <a v-if="project.link" :href="project.link" target="_blank"
+                                            class="btn btn-outline-light rounded-pill w-100 d-flex justify-content-center align-items-center gap-2 project-link-btn">
+                                            View Project
+                                            <iconify-icon icon="material-symbols:link" width="20" height="20"
+                                                class="link-icon"></iconify-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev custom-carousel-btn" type="button"
+                    data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next custom-carousel-btn" type="button"
+                    data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators mt-4  bottom-0  d-flex justify-content-center">
+                    <button v-for="(chunk, index) in chunkedProjects" :key="'indicator-' + index" type="button"
+                        data-bs-target="#projectCarousel" :data-bs-slide-to="index"
+                        :class="['rounded-circle bg-light', { active: index === 0 }]" style="width: 10px; height: 10px"
+                        :aria-label="'Slide ' + (index + 1)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
 import Navbar from '@/components/NavbarNew.vue'
 import { gsap } from 'gsap'
 import Saya from '@/assets/FarrAAU.png';
+import AAU from '@/assets/AAUicon.png';
+import Oscar from '@/assets/OscarBookstore.png';
+import Yadi from '@/assets/YaDipinjam.png';
+import trax from '@/assets/trax.png';
+import hiwaya from '@/assets/hiwaya.png';
 
 export default {
     name: 'Home',
@@ -346,8 +419,8 @@ export default {
                 {
                     year: "2023",
                     company: "PT Transforma Dinamika Unggul",
-                    title: "Software Developer",
-                    desc: "Mengembangkan aplikasi web berbasis Vue dan Laravel untuk bisnis internal.",
+                    title: "Fullstack Web Developer",
+                    desc: "Mengembangkan aplikasi web berbasis Vue dan Laravel untuk bisnis internal, dan pihak ketiga",
                     color: "#22c55e",
                 },
                 {
@@ -358,6 +431,126 @@ export default {
                     color: "#06b6d4",
                 },
             ],
+            projects: [
+                {
+                    id: 1,
+                    img: hiwaya,
+                    title: 'Hiwaya',
+                    desc:
+                        'Hiwaya bantu usaha kamu go digital tanpa ribet. Gak perlu tim IT, semua udah kami siapin — lebih murah, efisien, dan langsung bisa jalan.',
+                    category: [
+                        { id: 1, name: 'Website' },
+                        { id: 2, name: 'Landing Page' },
+                        { id: 3, name: 'Vue' },
+                        { id: 3, name: 'Adonis.js' }
+                    ],
+                    link: 'https://hiwaya.id'
+                },
+                {
+                    id: 1,
+                    img: trax,
+                    title: 'TRAX',
+                    desc:
+                        'Consultant Company, PT Transforma Dinamika Unggul, bergerak di bidang Human Resource',
+                    category: [
+                        { id: 1, name: 'Website' },
+                        { id: 2, name: 'Landing Page' },
+                        { id: 3, name: 'Vue' },
+                        { id: 3, name: 'Adonis.js' }
+                    ],
+                    link: 'https://trax.co.id'
+                },
+                {
+                    id: 1,
+                    img: Oscar,
+                    title: 'Toko Buku Oscar',
+                    desc:
+                        'Aplikasi penjualan dan pembelian buku yang mendukung transaksi secara online maupun onsite, memudahkan pelanggan dalam mencari dan mendapatkan buku.',
+                    category: [
+                        { id: 1, name: 'Web Design' },
+                        { id: 2, name: 'Online Shop' },
+                        { id: 3, name: 'Vue' },
+                        { id: 3, name: 'Laravel' }
+                    ],
+                    link: null
+                },
+                {
+                    id: 2,
+                    img: Yadi,
+                    title: 'YaDipinjam',
+                    desc:
+                        'Website perpustakaan kolektif yang memungkinkan pengguna meminjam dan meminjamkan buku secara langsung antar pengguna.',
+                    category: [
+                        { id: 1, name: 'Website' },
+                        { id: 2, name: 'Landing Page' },
+                        { id: 3, name: 'Vue' },
+                        { id: 4, name: 'Laravel' },
+                    ],
+                    link: null
+                },
+                {
+                    id: 3,
+                    img: AAU,
+                    title: 'CDC AAU',
+                    desc:
+                        'Aplikasi untuk membantu pengguna mengembangkan karakter pribadi dengan fitur evaluasi, penilaian untuk Taruna Akademi Angkatan Udara Indonesia.',
+                    category: [
+                        { id: 1, name: 'CDC System' },
+                        { id: 2, name: 'Website' },
+                        { id: 2, name: 'Laravel' }
+                    ],
+                    link: null
+                },
+                {
+                    id: 4,
+                    img: AAU,
+                    title: 'Administrasi AAU',
+                    desc:
+                        'Sistem untuk membantu pengguna dalam administrasi untuk Akademi Angkatan Udara Indonesia.',
+                    category: [
+                        { id: 1, name: 'Website' },
+                        { id: 2, name: 'PHP' },
+                        { id: 2, name: 'Laravel' }
+                    ],
+                    link: null
+                },
+                {
+                    id: 5,
+                    img: AAU,
+                    title: 'MKP Perbekalan AAU',
+                    desc:
+                        'Aplikasi untuk membantu pengelolaan perbekalan Akademi Angkatan Udara Indonesia',
+                    category: [
+                        { id: 1, name: 'Website' },
+                        { id: 2, name: 'Vue' },
+                        { id: 2, name: 'Laravel' }
+                    ],
+                    link: null
+                },
+                {
+                    id: 6,
+                    img: AAU,
+                    title: 'Administrasi AAU',
+                    desc:
+                        'Aplikasi untuk membantu pengguna dalam administrasi Akademi Angkatan Udara Indonesia.',
+                    category: [
+                        { id: 1, name: 'Website' },
+                        { id: 2, name: 'PHP' },
+                        { id: 2, name: 'Laravel' }
+                    ],
+                    link: null
+                },
+            ]
+        }
+    },
+    computed: {
+        chunkedProjects() {
+            const chunkSize = window.innerWidth < 768 ? 1 : 3;
+            const result = [];
+            for (let i = 0; i < this.projects.length; i += chunkSize) {
+                result.push(this.projects.slice(i, i + chunkSize));
+            }
+            return result;
         }
     },
     methods: {
@@ -394,6 +587,13 @@ export default {
                 }
             );
         },
+        chunkProjects() {
+            const chunkSize = window.innerWidth < 768 ? 1 : 3; // mobile = 1, desktop = 3
+            this.chunkedProjects = [];
+            for (let i = 0; i < this.projects.length; i += chunkSize) {
+                this.chunkedProjects.push(this.projects.slice(i, i + chunkSize));
+            }
+        }
     },
     mounted() {
         this.animateHero();
@@ -654,6 +854,7 @@ iconify-icon {
 
 /* Social Icon */
 .social-icon {
+    color: white;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -769,21 +970,26 @@ iconify-icon {
 }
 
 .responsive-abt {
-  padding-top: 20px;
+    padding-top: 20px;
 }
+
 .tk-skills {
     padding-top: 70px
-  }
-
-
-@media (min-width: 992px) { /* Bootstrap breakpoint untuk lg */
-  .responsive-abt {
-    padding-top: 120px;
-  }
-  .tk-skills {
-    padding-top: 0px
-  }
 }
+
+
+@media (min-width: 992px) {
+
+    /* Bootstrap breakpoint untuk lg */
+    .responsive-abt {
+        padding-top: 120px;
+    }
+
+    .tk-skills {
+        padding-top: 0px
+    }
+}
+
 /* Stat box */
 .stat-box {
     border: 1px solid #a855f7;
@@ -857,6 +1063,10 @@ iconify-icon {
 
 .border-gradient-blue {
     border-color: #3b82f6;
+}
+
+.border-gradient-bluepk {
+    border-color: #3868b4;
 }
 
 .border-gradient-green {
@@ -1012,5 +1222,72 @@ iconify-icon {
     .year-label {
         font-size: 0.9rem;
     }
+}
+
+.project-section {
+    background: linear-gradient(180deg, #0b0014, #1a0929);
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease;
+    min-height: 100%;
+}
+
+.project-img {
+    transition: transform 0.5s ease;
+    height: 240px;
+    object-fit: cover;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+.custom-carousel-btn {
+    background-color: #6f42c1;
+    border-radius: 20%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.custom-carousel-btn .carousel-control-prev-icon,
+.custom-carousel-btn .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.text-truncate-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    min-height: 80px;
+}
+
+.carousel-indicators {
+    bottom: -2rem !important;
+    justify-content: start;
+    gap: 0.5rem;
+}
+
+.carousel-inner {
+    padding-bottom: 3rem;
+}
+
+.project-link-btn .link-icon {
+  transition: transform 0.3s ease;
+}
+
+.project-link-btn:hover .link-icon {
+  transform: translateY(-3px);
 }
 </style>

@@ -38,6 +38,7 @@ export default {
                 { id: "home", name: "Home" },
                 { id: "about", name: "About" },
                 { id: "my-journey", name: "Journey" },
+                { id: "project", name: "Project" },
             ],
         };
     },

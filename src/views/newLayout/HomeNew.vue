@@ -363,10 +363,12 @@
             </div>
         </div>
     </section>
+    <Footer />
 </template>
 
 <script>
 import Navbar from '@/components/NavbarNew.vue'
+import Footer from '@/components/FooterNew.vue'
 import { gsap } from 'gsap'
 import Saya from '@/assets/FarrAAU.png';
 import AAU from '@/assets/AAUicon.png';
@@ -377,7 +379,7 @@ import hiwaya from '@/assets/hiwaya.png';
 
 export default {
     name: 'Home',
-    components: { Navbar },
+    components: { Navbar, Footer },
     data() {
         return {
             hoverIcon: false,
